@@ -1,0 +1,24 @@
+.pager {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: $m-size;
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin-bottom: $l-size;
+  }
+}
+
+.pager__item {
+  margin-bottom: $s-size;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 $s-size 0 0;
+  }
+}
+
+.pager-input {
+  text-align: center;
+  border: 1px solid darken($off-white, 7%);
+  width: 80px;
+}
